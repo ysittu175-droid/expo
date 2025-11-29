@@ -12,6 +12,13 @@
     "static",
     "build"
   ],
+  "exports": {
+    ".": "./build/bin/cli",
+    "./package.json": "./package.json",
+    "./add-module": "./add-module.js",
+    "./build/metro-require/*": "./build/metro-require/*.js",
+    "./static/template/*": "./static/template/*"
+  },
   "scripts": {
     "build": "taskr",
     "clean": "expo-module clean",
